@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tristalk</title>
+  <link href="http://fonts.googleapis.com/css?family=Fredericka+the+Great|Merienda+One" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header class="mh">
+    <h1 class="title title-font"><a href="/">Tristalk</a></h1>
+    <nav>
+      <ul>
+        <li class="nav-item">
+          <a href="/categories/JavaScript" class="nav-category1">
+            <div class="nav-talk"></div><span class="nav-text">JavaScript</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/categories/Node.js" class="nav-category4">
+            <div class="nav-talk"></div><span class="nav-text">Node.js</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/categories/HTML" class="nav-category3">
+            <div class="nav-talk"></div><span class="nav-text">HTML</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/categories/Life" class="nav-category5">
+            <div class="nav-talk"></div><span class="nav-text">Life</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/categories/CSS" class="nav-category2">
+            <div class="nav-talk"></div><span class="nav-text">CSS</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="pcontent">
+      <h1>test</h1>
+      <div>Wed May 20 2015 20:37:55 GMT+0800</div>
+      <p>上一篇 介紹了正四面體與正六面體，接著我們要用同樣的方法，來製作正八面體與正十二面體，這兩個正多面體雖然組合的面比較多，不過因為具備了對稱性，所以只需要製作出一半的結構，另外一半再用反轉的方式接在一起即可。</p>
+      <a id="more"></a>
+      <p>正八面體</p>
+      <p>正八面體可以想像成「兩個金字塔」疊合在一起，為了方便我們後續作整個金字塔旋轉的動作，我們要用另外一個容器來把金字塔包裝起來，可以想像成把金字塔的四個面變成一個群組，就可以針對這個群組做變形或移動，HTML 的結構如下，space 裡面有 box1 和 box2，box1 是上半部的金字塔，box2 是下半部的金字塔：</p>
+      <p>code</p>
+      <div class="camera">
+        <br>
+        <div class="space">
+          <br>
+          <div class="box1">
+            <br>
+            <div class="face1"></div>
+            <br>
+            <div class="face2"></div>
+            <br>
+            <div class="face3"></div>
+            <br>
+            <div class="face4"></div>
+            <br> </div>
+          <br>
+          <div class="box2">
+            <br>
+            <div class="face1"></div>
+            <br>
+            <div class="face2"></div>
+            <br>
+            <div class="face3"></div>
+            <br>
+            <div class="face4"></div>
+            <br> </div>
+          <br> </div>
+        <br>
+      </div>
+      <div id="disqus_thread"></div>
+      <var>disqus_type = page.comments ? 'embed' : 'count'</var>
+      <script>
+        var disqus_shortname = 'trista515'; // Required - Replace '<example>' with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+
+
+        //- (function(){
+        //-   var dsq = document.createElement('script');
+        //-   dsq.type = 'text/javascript';
+        //-   dsq.async = true;
+        //-   var jsfs = 'embed.js' //: 'count.js';
+        //-   dsq.src = 'http://' + 'trista515' + '.disqus.com/' + jsfs;
+        //-   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+        //-   console.log(dsq)
+        //- })();
+        //}
+      </script>
+    </div>
+  </main>
+  <footer>&copy Trista 2015</footer>
+</body>
+<script src="/scripts/main.js"></script>
+
+</html>
