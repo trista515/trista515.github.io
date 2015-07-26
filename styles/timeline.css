@@ -1,60 +1,90 @@
-ul {
-  margin: 0;
-  padding: 0;
+.timeline {
+  absolute: left 0 right 0;
+  margin: auto;
+  border-radius: 5px;
+  background: #ccc;
+  z-index: 1;
 }
 
-@media screen and (max-width: 1005px) {
-  #posts {
-    width: 80%;
+.timeline .tl-point {
+  relative: left -24px;
+  display: block;
+  font-size: 14px;
+}
+
+.timeline li:nth-child(odd) {
+  margin-top: 330px;
+}
+
+.timeline li:nth-child(even) {
+  margin-top: 100px;
+}
+
+.timeline li:first-child {
+  margin-top: 40px;
+}
+
+.timeline .tl-category-1 {
+  background: #d85a5a;
+}
+
+.timeline .tl-category-2 {
+  background: #db9256;
+}
+
+.timeline .tl-category-3 {
+  background: #839e4b;
+}
+
+.timeline .tl-category-4 {
+  background: #2582a3;
+}
+
+.timeline .tl-category-5 {
+  background: #2e63a9;
+}
+
+@media screen and (min-width: 1281px) {
+  .timeline li:nth-child(odd) {
+    margin-top: 180px;
   }
-  .post {
-    width: 100%;
-    margin: 10px;
+  .timeline li:first-child {
+    margin-top: 40px;
   }
-  #timeline {
-    margin-left: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .timeline {
+    margin-left: 45px;
   }
-  .timepoint:nth-child(odd),
-  .timepoint:nth-child(even) {
-    margin-top: 480px;
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    margin-top: 330px;
   }
-  .timepoint:first-child {
-    margin-top: 85px;
+  .timeline li:first-child {
+    margin-top: 80px;
   }
-  .post.tag1:nth-child(odd)::after {
-    border-left-color: transparent;
-    border-right-color: rgb(255, 151, 151);
+}
+
+@media screen and (max-width: 640px) {
+  .timeline {
+    margin-left: 7%;
   }
-  .post.tag2:nth-child(odd)::after {
-    border-left-color: transparent;
-    border-right-color: rgb(255, 192, 126);
+}
+
+@media screen and (max-width: 480px) {
+  .timeline {
+    margin-left: 20px;
   }
-  .post.tag3:nth-child(odd)::after {
-    border-left-color: transparent;
-    border-right-color: rgb(255, 234, 142);
+  .timeline .tl-point {
+    relative: left -19px;
+    font-size: 12px;
   }
-  .post.tag4:nth-child(odd)::after {
-    border-left-color: transparent;
-    border-right-color: rgb(103, 214, 140);
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    margin-top: 340px;
   }
-  .post.tag5:nth-child(odd)::after {
-    border-left-color: transparent;
-    border-right-color: rgb(96, 145, 215);
+  .timeline li:first-child {
+    margin-top: 80px;
   }
-  section:nth-child(odd)::after,
-  section:nth-child(even)::after {
-    top: 75px;
-  }
-  section:nth-child(odd)::after {
-    /*      right: 100%;
-*/
-    left: -40px;
-  }
-  /*
-    nav{
-      display: none;
-    }
-    main{
-      display: none;
-    }*/
 }

@@ -97,5 +97,26 @@ a img {
 
 a {
   color: inherit;
-  text-decoration: blink;
+  text-decoration: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: inherit;
+  background: none;
+}
+
+[class^="flaticon-"]:before,
+[class*="flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*="flaticon-"]:after {
+  font-size: inherit;
+  margin-left: 0;
+}
+
+[class^="flaticon-"],
+[class*="flaticon-"] {
+  margin: 0 5px;
 }
