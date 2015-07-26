@@ -10,12 +10,13 @@ mixin post-summary(post, className)
 
     div.post-summary-comments.disqus-count
       span.post-summary-comments-icon.icon-talk
-      a(href= url_for(post.path) + "#disqus_thread" data-disqus-identifier)
-        span.disqus-comment-count(data-disqus-url= url_for(post.path)) ...
+      a(href= post.permalink + "#disqus_thread" data-disqus-identifier)
+        span.disqus-comment-count(data-disqus-url= post.permalink) ...
     div.post-summary-tags
       span.flaticon-tags2
       != list_tags(post.tags, {show_count:false, style:'none'})
     div.post-summary-plus
+      -post= post
       include plus
 
 h1.hide 文章列表
