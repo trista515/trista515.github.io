@@ -1,0 +1,39 @@
+mixin post-summary(post, className)
+  section.post-summary(class= className)
+    a.post-summary-cover(href= url_for(post.path))
+      img.post-summary-cover-img(src= post.cover)
+      span.post-summary-cover-icon.flaticon-eye106
+
+    h1.post-summary-title
+      a(href=url_for(post.path))= post.title
+    div.post-summary-excerpt!= post.excerpt
+
+    div.post-summary-comments.disqus-count
+      span.post-summary-comments-icon.icon-talk
+      a(href= url_for(post.path) + "#disqus_thread" data-disqus-identifier)
+        span.disqus-comment-count(data-disqus-url= url_for(post.path)) ...
+    div.post-summary-tags
+      span.flaticon-tags2
+      != list_tags(post.tags, {show_count:false, style:'none'})
+    div.post-summary-plus
+      include plus
+
+h1.hide 文章列表
+ul.timeline
+  each post in page.posts.data
+    -idx = theme.categories.indexOf(post.categories.data[0].name) + 1
+    -className = 'tl-category-' + idx
+    li
+      span.tl-point(
+        class= className,
+        title=post.date.format('MMM DD YYYY, HH:mm')
+      )= post.date.format('MM.DD')
+
+ul.post-list
+  each post in page.posts.data
+    -idx = theme.categories.indexOf(post.categories.data[0].name) + 1
+    -className = 'post-summary-category-' + idx
+    li
+      +post-summary(post, className)
+
+div.paginator!= paginator({end_size:0, mid_size: 4, space:'', prev_text: '«', next_text: '»'})

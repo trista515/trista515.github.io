@@ -1,0 +1,19 @@
+h1.logo
+  a(href= url_for()) Tristalk#[span.logo-icon.flaticon-loud7]
+
+button.m-nav.flaticon-menu48#btn-m-nav
+
+nav#nav
+  h1.hide 文章分類
+  ul.nav-list
+    each url, name in theme.category_map
+      -idx = theme.categories.indexOf(name) + 1
+      -className = 'nav-category-' + idx
+      li.nav-item(class= className)
+        a(href='/categories/' + url role='button')
+          span.nav-icon.icon-talk
+          span.nav-text= name
+
+div.search
+  span.flaticon-magnifier13
+  != search_form()

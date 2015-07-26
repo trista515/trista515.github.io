@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Tristalk
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+
+    link(href='/favicon.ico' rel='shortcut icon')
+    link(href='/favicon.ico' rel='bookmark')
+    link(href='http://fonts.googleapis.com/css?family=Inconsolata|Patrick+Hand+SC|Merienda+One' rel='stylesheet')
+    link(href='/vendor/flaticon/flaticon.css' rel='stylesheet')
+    link(href='/styles/theme.css' rel='stylesheet')
+  body
+    header
+      include partial/header
+
+    article
+      != body
+
+    footer
+      include partial/footer
+
+  include partial/plugins
+  script(src='/scripts/theme.js')

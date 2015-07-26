@@ -1,0 +1,67 @@
+@import './variables.styl'
+
+.timeline
+  absolute: left 0 right 0
+  margin: auto
+  size(2px 100%)
+  border-radius: 5px
+  background: color-border
+  z-index: 1
+
+  .tl-point
+    diameter= 50px
+    relative: left -((diameter / 2px) - 1px)
+    display: block
+    circle-text(diameter)
+    font-size: 14px
+
+  li
+    &:nth-child(odd)
+      margin-top: 330px
+    &:nth-child(even)
+      margin-top: 100px
+    &:first-child
+      margin-top: 40px
+
+  for i in (1..nav-length)
+    .tl-category-{i}
+      background color-category + i
+
+@media screen and (min-width: 1281px)
+  .timeline li
+    &:nth-child(odd)
+      margin-top: 180px
+    &:first-child
+      margin-top: 40px
+
+@media screen and (max-width: 960px)
+  .timeline
+    margin-left: 45px
+
+    li
+      &:nth-child(odd),
+      &:nth-child(even)
+        margin-top: 330px
+      &:first-child
+        margin-top: 80px
+
+@media screen and (max-width: 640px)
+  .timeline
+    margin-left: 7%
+
+@media screen and (max-width: 480px)
+  .timeline
+    margin-left: 20px
+
+    .tl-point
+      diameter= 40px
+      relative: left -((diameter / 2px) - 1px)
+      circle-text(diameter)
+      font-size: 12px
+
+    li
+      &:nth-child(odd),
+      &:nth-child(even)
+        margin-top: 340px
+      &:first-child
+        margin-top: 80px

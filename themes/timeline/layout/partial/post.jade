@@ -1,0 +1,37 @@
+div.post
+  header.post-header
+    -idx = (theme.categories.indexOf(page.categories.data[0].name) + 1)
+    -className = 'post-category' + idx + '-icon'
+    h1
+      span.post-category-icon.flaticon-loud7(class= className)
+      = page.title
+    div.post-date
+      span.flaticon-calendar68
+      span= page.date.format('MMM DD YYYY, HH:mm')
+    div.post-tags
+      span.flaticon-tags2
+      != list_tags(page.tags, {show_count:false, style:'none'})
+
+  img.post-cover(src= page.cover)
+
+  div.post-content!= page.content
+
+  footer.post-footer
+    div.post-plus
+      include plus
+
+div.post-others
+  div.post-prev
+    if(page.next)
+      span « 上一篇文章
+      span #[a(href= url_for(page.next.path)) #[img.post-others-cover(src= page.next.cover)]]
+      span.post-others-title #[a(href=url_for(page.next.path))= page.next.title]
+  div.post-next
+    if(page.prev)
+      span 下一篇文章 »
+      span #[a(href= url_for(page.prev.path)) #[img.post-others-cover(src= page.prev.cover)]]
+      span.post-others-title #[a(href=url_for(page.prev.path))= page.prev.title]
+
+aside.post-comments
+  h1.hide Comments
+  div#disqus_thread

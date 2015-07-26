@@ -1,0 +1,94 @@
+.post,
+.post-others,
+.post-comments
+  position: relative
+  width 80%
+  margin 20px auto
+  padding: 20px 30px
+  border: 1px dotted color-border
+  border-radius: 5px
+  background-color: color-header
+
+.post
+  .post-header
+    position: relative
+    padding-bottom: 20px
+    border-bottom: 1px dotted color-border
+
+    for i in (1..nav-length)
+      .post-category{i}-icon
+        margin-right: 15px
+        font-size: 30px
+        color: color-category + i
+        @media screen and (max-width: 480px)
+          margin-right: 10px
+          font-size: 18px
+
+    > h1
+      font-size: 36px
+      padding: 30px 0
+      @media screen and (max-width: 480px)
+        font-size: 24px
+        padding: 30px 0 20px 0
+
+    .post-date
+      absolute: top 10px right 0
+      @media screen and (max-width: 480px)
+        absolute: top 0px right 0
+
+  .post-cover
+    display: block
+    width: 50%
+    min-width: 280px
+    margin: 20px auto
+
+  .post-plus
+    margin: 35px 0 5px 0
+    >*
+      vertical-align: middle !important
+
+  .post-content
+    margin: 20px 0
+    font-size: 20px
+    overflow: hidden
+
+    p
+      margin: 5px 0
+    a
+      text-decoration: underline
+    img
+      max-width: 100%
+
+
+.post-others
+  clearfix()
+
+  > *
+    float: left
+    size(45% 100%)
+    padding: 0 2%
+    line-height: 36px
+    vertical-align: top
+
+  > *:first-child
+    border-right: 1px dotted color-border
+    text-align: right
+
+  > *:last-child
+    border-left: 1px dotted color-border
+    text-align: left
+
+  .post-prev > *,
+  .post-next > *
+    display: block
+  .post-others-title
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
+
+  .post-others-cover
+    height: 170px
+    border-radius: 2px
+
+    @media screen and (max-width: 720px)
+      height: 100px
