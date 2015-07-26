@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tristalk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link href="/favicon.ico" rel="shortcut icon">
+  <link href="/favicon.ico" rel="bookmark">
+  <link href="http://fonts.googleapis.com/css?family=Inconsolata|Patrick+Hand+SC|Merienda+One" rel="stylesheet">
+  <link href="/vendor/flaticon/flaticon.css" rel="stylesheet">
+  <link href="/styles/theme.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"><a href="/">Tristalk<span class="logo-icon flaticon-loud7"></span></a></h1>
+    <button id="btn-m-nav" class="m-nav flaticon-menu48"></button>
+    <nav id="nav">
+      <h1 class="hide">文章分類</h1>
+      <ul class="nav-list">
+        <li class="nav-item nav-category-1"><a href="/categories/js" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">JavaScript</span></a></li>
+        <li class="nav-item nav-category-2"><a href="/categories/css" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">CSS</span></a></li>
+        <li class="nav-item nav-category-3"><a href="/categories/html" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">HTML</span></a></li>
+        <li class="nav-item nav-category-4"><a href="/categories/node-js" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">Node.js</span></a></li>
+        <li class="nav-item nav-category-5"><a href="/categories/life" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">Life</span></a></li>
+      </ul>
+    </nav>
+    <div class="search"><span class="flaticon-magnifier13"></span>
+      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+        <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
+        <input type="hidden" name="sitesearch" value="http://yoursite.com">
+      </form>
+    </div>
+  </header>
+  <article>
+    <div class="post">
+      <header class="post-header">
+        <h1><span class="post-category-icon flaticon-loud7 post-category5-icon"></span>Hello! I'm Trista</h1>
+        <div class="post-date"><span class="flaticon-calendar68"></span><span>Jul 26 2015, 11:27</span></div>
+        <div class="post-tags"><span class="flaticon-tags2"></span></div>
+      </header><img class="post-cover" />
+      <div class="post-content">
+        <p>Hello 大家好，我是Trista :D
+          <br>歡迎你們來到 Tristalk 哦！</p>
+        <a id="more"></a>
+        <h1 id="關於_Tristalk">關於 Tristalk</h1>
+        <p>Tristalk 是由 Trista talk 兩個單字結合而成的，其意思只是希望可以把一些知識簡單的記錄下來而已:)
+          <br>畢竟接觸到的新知識越來越多又很零散，希望可以透過記錄來把這些知識稍微系統化一下，同時也期許能成為第二腦袋啦~</p>
+        <h1 id="關於_Trista">關於 Trista</h1>
+        <p>十幾年前陰錯陽差的參與班級網頁的比賽，那時還只知道用「Front Page」搞網站的年紀；幾年後又陰錯陽差的進入了資訊管理系，從此認識了一個叫「程式」的世界；在程式裡打轉了好幾年，也對寫程式所帶來的成就感著迷不已。
+          <br>然而正因為愛寫程式，所以一度茫然不曉得該往哪個程式語言發展。</p>
+        <p>但是…
+          <br>命運卻陰錯陽差的讓我進入了純前端的行業，從此才真正的好好摸過「JavaScript、CSS、HTML」等前端技術。原來轉了十幾年，我還是跟網頁扯上關係了！只是以前是四處找別人的程式拼拼湊湊自己的小天地，而現在是可以自己打天下的地步XD</p>
+        <p>後來…
+          <br>因緣巧合之下認識了名叫「Node.js」這個莫大世界！因此決定以後要好好的在前端世界打轉，然後順便侵略後端的領土XD</p>
+        <p>但人生也不是只有程式而已…</p>
+        <ul>
+          <li>喜歡設計，雖然沒有什麼畫畫天份，但就很愛學人拿張紙在上面亂畫有的沒的設計圖</li>
+          <li>喜歡DIY，所以也喜歡佈置，覺得生活在一個由自己創造的天地是一件極為美好的事</li>
+          <li>喜歡紙膠帶，致力於尋找各種可以用到紙膠帶的用途！</li>
+        </ul>
+        <p>噢，還有最喜歡做的事就是 - 規劃。總是愛花時間來思考下一個里程埤，覺得想著想著就是一個前進的動力！</p>
+      </div>
+      <footer class="post-footer">
+        <div class="post-plus">
+          <div data-href="http://yoursite.com/posts/2015/07/26/about/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" data-colorscheme="dark" class="fb-like"></div>
+          <div data-href="http://yoursite.com/posts/2015/07/26/about/" data-size="medium" width="60px" class="g-plusone"></div>
+        </div>
+      </footer>
+    </div>
+    <div class="post-others">
+      <div class="post-prev"></div>
+      <div class="post-next"></div>
+    </div>
+    <aside class="post-comments">
+      <h1 class="hide">Comments</h1>
+      <div id="disqus_thread"></div>
+    </aside>
+  </article>
+  <footer><img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/10845647_1113218138694851_6572161589131527754_o.jpg" class="avatar"><span class="license">&copy 2015 Tristalk, designed by Trista Chen <br>Powered by <a href="https://hexo.io/">Hexo</a> <br>Icons made by&nbsp;<a href="http://www.flaticon.com/authors/daniel-bruce">Daniel Bruce</a>,&nbsp;<a href="http://www.flaticon.com/authors/dave-gandy">Dave Gandy</a>,&nbsp;<a href="http://www.flaticon.com/authors/simpleicon">SimpleIcon</a>,&nbsp;<a href="http://www.flaticon.com/authors/freepik">Freepik</a>&nbsp;from&nbsp;<a href="http://www.flaticon.com">flaticon.com</a>&nbsp;is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span></footer>
+</body>
+<script>
+  var disqus_shortname = 'trista515';
+  var disqus_type = 'embed';
+  (function() {
+    var s = document.createElement('script');
+    s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/' + disqus_type + '.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = '//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.4';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'))
+</script>
+<script>
+  (function() {
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="/scripts/theme.js"></script>
+
+</html>

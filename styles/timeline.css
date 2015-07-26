@@ -1,0 +1,90 @@
+.timeline {
+  absolute: left 0 right 0;
+  margin: auto;
+  border-radius: 5px;
+  background: #ccc;
+  z-index: 1;
+}
+
+.timeline .tl-point {
+  relative: left -24px;
+  display: block;
+  font-size: 14px;
+}
+
+.timeline li:nth-child(odd) {
+  margin-top: 330px;
+}
+
+.timeline li:nth-child(even) {
+  margin-top: 100px;
+}
+
+.timeline li:first-child {
+  margin-top: 40px;
+}
+
+.timeline .tl-category-1 {
+  background: #d85a5a;
+}
+
+.timeline .tl-category-2 {
+  background: #db9256;
+}
+
+.timeline .tl-category-3 {
+  background: #839e4b;
+}
+
+.timeline .tl-category-4 {
+  background: #2582a3;
+}
+
+.timeline .tl-category-5 {
+  background: #2e63a9;
+}
+
+@media screen and (min-width: 1281px) {
+  .timeline li:nth-child(odd) {
+    margin-top: 180px;
+  }
+  .timeline li:first-child {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .timeline {
+    margin-left: 45px;
+  }
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    margin-top: 330px;
+  }
+  .timeline li:first-child {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .timeline {
+    margin-left: 7%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timeline {
+    margin-left: 20px;
+  }
+  .timeline .tl-point {
+    relative: left -19px;
+    font-size: 12px;
+  }
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    margin-top: 340px;
+  }
+  .timeline li:first-child {
+    margin-top: 80px;
+  }
+}

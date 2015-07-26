@@ -1,0 +1,24 @@
+.hide {
+  display: none;
+}
+
+.tag-link {
+  text-decoration: underline;
+}
+
+.icon-talk {
+  position: absolute;
+  border-radius: 4px;
+  background: #ddd;
+}
+
+.icon-talk::after {
+  content: '';
+  display: block;
+  absolute: top 19px left 10px;
+  border-width: 3px 4px;
+  border-color: transparent;
+  border-style: solid;
+  border-top-color: #ddd;
+  border-left-color: #ddd;
+}

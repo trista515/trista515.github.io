@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tristalk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link href="/favicon.ico" rel="shortcut icon">
+  <link href="/favicon.ico" rel="bookmark">
+  <link href="http://fonts.googleapis.com/css?family=Inconsolata|Patrick+Hand+SC|Merienda+One" rel="stylesheet">
+  <link href="/vendor/flaticon/flaticon.css" rel="stylesheet">
+  <link href="/styles/theme.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"><a href="/">Tristalk<span class="logo-icon flaticon-loud7"></span></a></h1>
+    <button id="btn-m-nav" class="m-nav flaticon-menu48"></button>
+    <nav id="nav">
+      <h1 class="hide">文章分類</h1>
+      <ul class="nav-list">
+        <li class="nav-item nav-category-1"><a href="/categories/js" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">JavaScript</span></a></li>
+        <li class="nav-item nav-category-2"><a href="/categories/css" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">CSS</span></a></li>
+        <li class="nav-item nav-category-3"><a href="/categories/html" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">HTML</span></a></li>
+        <li class="nav-item nav-category-4"><a href="/categories/node-js" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">Node.js</span></a></li>
+        <li class="nav-item nav-category-5"><a href="/categories/life" role="button"><span class="nav-icon icon-talk"></span><span class="nav-text">Life</span></a></li>
+      </ul>
+    </nav>
+    <div class="search"><span class="flaticon-magnifier13"></span>
+      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+        <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
+        <input type="hidden" name="sitesearch" value="http://yoursite.com">
+      </form>
+    </div>
+  </header>
+  <article>
+    <h1 class="hide">文章列表</h1>
+    <ul class="timeline">
+      <li><span title="Jul 26 2015, 11:27" class="tl-point tl-category-5">07.26</span></li>
+    </ul>
+    <ul class="post-list">
+      <li>
+        <section class="post-summary post-summary-category-5">
+          <a href="/posts/2015/07/26/about/" class="post-summary-cover"><img class="post-summary-cover-img" /><span class="post-summary-cover-icon flaticon-eye106"></span></a>
+          <h1 class="post-summary-title"><a href="/posts/2015/07/26/about/">Hello! I'm Trista</a></h1>
+          <div class="post-summary-excerpt">
+            <p>Hello 大家好，我是Trista :D
+              <br>歡迎你們來到 Tristalk 哦！</p>
+          </div>
+          <div class="post-summary-comments disqus-count"><span class="post-summary-comments-icon icon-talk"></span><a href="/posts/2015/07/26/about/#disqus_thread" data-disqus-identifier="data-disqus-identifier"><span data-disqus-url="/posts/2015/07/26/about/" class="disqus-comment-count">...</span></a></div>
+          <div class="post-summary-tags"><span class="flaticon-tags2"></span></div>
+          <div class="post-summary-plus">
+            <div data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" data-colorscheme="dark" class="fb-like"></div>
+            <div data-size="medium" width="60px" class="g-plusone"></div>
+          </div>
+        </section>
+      </li>
+    </ul>
+    <div class="paginator"><span class="page-number current">1</span></div>
+  </article>
+  <footer><img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/10845647_1113218138694851_6572161589131527754_o.jpg" class="avatar"><span class="license">&copy 2015 Tristalk, designed by Trista Chen <br>Powered by <a href="https://hexo.io/">Hexo</a> <br>Icons made by&nbsp;<a href="http://www.flaticon.com/authors/daniel-bruce">Daniel Bruce</a>,&nbsp;<a href="http://www.flaticon.com/authors/dave-gandy">Dave Gandy</a>,&nbsp;<a href="http://www.flaticon.com/authors/simpleicon">SimpleIcon</a>,&nbsp;<a href="http://www.flaticon.com/authors/freepik">Freepik</a>&nbsp;from&nbsp;<a href="http://www.flaticon.com">flaticon.com</a>&nbsp;is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span></footer>
+</body>
+<script>
+  var disqus_shortname = 'trista515';
+  var disqus_type = 'count';
+  (function() {
+    var s = document.createElement('script');
+    s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/' + disqus_type + '.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = '//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.4';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'))
+</script>
+<script>
+  (function() {
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="/scripts/theme.js"></script>
+
+</html>
